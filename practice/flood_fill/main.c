@@ -49,10 +49,10 @@ int main(void)
 	t_point begin = { 2, 4 };
 	char *area[7];
 	area[0] = "11111111";
-	area[1] = "10001001";
+	area[1] = "10000001";
 	area[2] = "10010001";
 	area[3] = "10110001";
-	area[4] = "10010001";
+	area[4] = "10011111";
 	area[5] = "10001001";
 	area[6] = "10000101";
 
@@ -61,5 +61,6 @@ int main(void)
 	flood_fill(map, size, begin);
 	putc('\n');
 	print_tab(map, size);
+	free(map);
 	return (0);
 }
